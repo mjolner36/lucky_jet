@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412336054280",
+    "project_id": "lucky-fc96a",
+    "storage_bucket": "lucky-fc96a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412336054280:android:a3c3b8c06394a49d8c31bd",
+        "android_client_info": {
+          "package_name": "com.gamelacky.luckyjet.lucky.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412336054280-mj7h63qd4325nnp38hjj97qor4liar5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2UMNDMRKjeSJwPqbAj4WHZLkb3qpkoEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412336054280-mj7h63qd4325nnp38hjj97qor4liar5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
