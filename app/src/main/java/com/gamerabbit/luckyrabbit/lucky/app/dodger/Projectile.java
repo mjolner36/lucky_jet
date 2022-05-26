@@ -1,4 +1,4 @@
-package com.gamelacky.luckyjet.lucky.app.dodger;
+package com.gamerabbit.luckyrabbit.lucky.app.dodger;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

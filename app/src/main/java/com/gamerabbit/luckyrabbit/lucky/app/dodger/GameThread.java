@@ -1,4 +1,4 @@
-package com.gamelacky.luckyjet.lucky.app.dodger;
+package com.gamerabbit.luckyrabbit.lucky.app.dodger;
 
 import android.annotation.SuppressLint;
 import android.graphics.Canvas;

@@ -1,4 +1,4 @@
-package com.gamelacky.luckyjet.lucky.app
+package com.gamerabbit.luckyrabbit.lucky.app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

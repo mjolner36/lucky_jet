@@ -1,4 +1,4 @@
-package com.gamelacky.luckyjet.lucky.app
+package com.gamerabbit.luckyrabbit.lucky.app
 
 import org.junit.Test
 

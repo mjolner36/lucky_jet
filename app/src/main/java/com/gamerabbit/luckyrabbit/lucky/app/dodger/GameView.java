@@ -1,20 +1,18 @@
-package com.gamelacky.luckyjet.lucky.app.dodger;
+package com.gamerabbit.luckyrabbit.lucky.app.dodger;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.media.MediaPlayer;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-import com.gamelacky.luckyjet.lucky.app.R;
+import com.gamerabbit.luckyrabbit.lucky.app.R;
 
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
@@ -42,7 +40,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         thread = new GameThread(getHolder(), this);
         setFocusable(true);
 
-        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.player), 50, 50);
+        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.rabbit), 50, 50);
 
         textColor = new Paint();
         textColor.setTextSize(20f);
@@ -65,7 +63,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
     public void surfaceCreated(SurfaceHolder holder) {
         Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.background_image);
         scaled = Bitmap.createScaledBitmap(background, getWidth(), getHeight(), true);
-        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.player), getWidth() / 2, (2 * (getHeight() / 3)));
+        player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.rabbit), getWidth() / 2, (2 * (getHeight() / 3)));
 
         thread.setRunning(true);
         if (thread.getState() == Thread.State.NEW) {
@@ -248,9 +246,9 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
 
     public void generateProjectile() {
         Random generator = new Random();
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.player);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rabbit);
         int startingXPosition = generator.nextInt(getWidth() - bitmap.getWidth());
-        Bitmap projectileBM = BitmapFactory.decodeResource(getResources(), R.drawable.projectile);
+        Bitmap projectileBM = BitmapFactory.decodeResource(getResources(), R.drawable.hat);
         Projectile projectile = new Projectile(projectileBM, startingXPosition, 0);
         projectiles.add(projectile);
     }

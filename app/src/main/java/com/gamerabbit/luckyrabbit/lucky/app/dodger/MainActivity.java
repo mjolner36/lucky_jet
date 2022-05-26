@@ -1,13 +1,14 @@
-package com.gamelacky.luckyjet.lucky.app.dodger;
+package com.gamerabbit.luckyrabbit.lucky.app.dodger;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.gamelacky.luckyjet.lucky.app.R;
+import com.gamerabbit.luckyrabbit.lucky.app.R;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -60,5 +61,11 @@ public class MainActivity extends AppCompatActivity
     {
         super.onDestroy();
         destroyMediaPlayer();
+    }
+    @Override
+    public void onBackPressed() {
+        onDestroy();
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
     }
 }

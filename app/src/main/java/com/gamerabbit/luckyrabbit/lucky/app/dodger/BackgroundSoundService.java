@@ -1,11 +1,11 @@
-package com.gamelacky.luckyjet.lucky.app.dodger;
+package com.gamerabbit.luckyrabbit.lucky.app.dodger;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
-import com.gamelacky.luckyjet.lucky.app.R;
+import com.gamerabbit.luckyrabbit.lucky.app.R;
 
 public class BackgroundSoundService extends Service
 {
